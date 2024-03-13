@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Module#5 React Day #7 Classwork: LocalTasker (ToDo WebApp)
+![](thumbnail.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hosted Version of the Project:
+[m5react-day-7-classwork-localtasker-todo-webapp](https://m5react-day-7-classwork-localtasker-todo-webapp.vercel.app/)
 
-## Available Scripts
+## Objective
+LocalTasker is a lightweight and efficient ToDo application designed to assist users in managing their tasks seamlessly. This application not only allows users to create, mark as completed, and delete tasks but also utilizes local storage to persistently store tasks, ensuring data persistence between sessions.
 
-In the project directory, you can run:
+## Features
++ Users can effortlessly create new tasks by entering task descriptions and clicking the 'Add Task' button. The application provides a quick and straightforward task input process.
++ With the 'Delete' button, users can easily remove tasks that are no longer needed. This action removes individual tasks from the list.
++ Users can mark tasks as completed by clicking on them, applying a strikethrough effect. The completed tasks remain visible for reference.
++ LocalTasker leverages local storage to store tasks persistently. This ensures that tasks are retained even when the user closes the browser or refreshes the page.
++ The 'Clear Completed' button allows users to efficiently remove all completed tasks, maintaining a clean and organized task list.
 
-### `npm start`
+## How to install and run in yours local machine
+```bash
+npm install
+npm run start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech. Stack Used:
++ [React](https://react.dev/)
++ [TailwindCSS](https://tailwindcss.com/)
++ [Google Fonts](https://fonts.google.com/)
++ [Font Awesome](https://fontawesome.com/icons/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Author
+[Abhishek kumar](https://www.linkedin.com/in/alex21c/), ([Geekster](https://geekster.in/) MERN Stack FS-14 Batch)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
