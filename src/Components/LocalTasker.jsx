@@ -146,7 +146,7 @@ export default class LocalTasker extends Component {
           </form>
         </header>
 
-        {Object.entries(this.state.mlcToDoTasks).map(([key,task])=>{
+        {Object.entries(this.state.mlcToDoTasks).length >0 &&  Object.entries(this.state.mlcToDoTasks).map(([key,task])=>{
           console.log(task, key);
           return <OutputLines task={task} key={key} taskId={key} deleteTheTask={this.deleteTheTask} toggleTaskStatus={this.toggleTaskStatus}/>
 
