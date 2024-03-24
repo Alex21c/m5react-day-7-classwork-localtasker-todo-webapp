@@ -53,11 +53,14 @@ export default class LocalTasker extends Component {
         }      
       });
     // now add the task name into the state
+      let bkInputFieldData = this.state.inputFieldData;
+
       this.setState({
+        inputFieldData: '',
         mlcToDoTasks:{
-          ...this.state.mlcToDoTasks,
+          ...this.state.mlcToDoTasks,          
           [this.generateUniqueId()]: {
-            taskName: this.state.inputFieldData,
+            taskName: bkInputFieldData,
             taskStatus: 'pending',
             textStyle : '',
             checkBoxChecked: ''
@@ -65,6 +68,7 @@ export default class LocalTasker extends Component {
         }
 
       });
+
 
 
 
@@ -131,6 +135,7 @@ export default class LocalTasker extends Component {
           <h1 className="smallCaps text-center font-semibold text-[3rem]  text-slate-50">LocalTasker (ToDo WebApp)</h1>
           <form className="flex flex-col gap-[1rem]  w-[100%]">
             <input 
+              value={this.state.inputFieldData}
              onChange = {this.handleInputChange}
               required="" className="text-slate-900 transition focus:outline focus:outline-2 focus:outline-yellow-500 p-[.5rem]   rounded-md" type="text" placeholder="Yours ToDo Task Name" 
             />
@@ -142,7 +147,7 @@ export default class LocalTasker extends Component {
         </header>
 
         {Object.entries(this.state.mlcToDoTasks).map(([key,task])=>{
-          console.log(task, key)
+          console.log(task, key);
           return <OutputLines task={task} key={key} taskId={key} deleteTheTask={this.deleteTheTask} toggleTaskStatus={this.toggleTaskStatus}/>
 
         }
