@@ -99,7 +99,10 @@ export default class LocalTasker extends Component {
           msgType: 'SuccessOrError',
           msg : `i'm the class S&E Msg.`,
           style : 'displayNone'        
-        }        
+        },
+        mlcToDoTasks: {
+          
+        }       
       };
     }    
     // console.log(initialState)
