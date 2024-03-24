@@ -12,7 +12,7 @@ export default class LocalTasker extends Component {
     }
   }
   toggleTaskStatus=(taskId)=>{
-    // console.log(this.state['mlcToDoTasks'][taskId].taskStatus)
+    // //console.log(this.state['mlcToDoTasks'][taskId].taskStatus)
 
     this.setState({
       mlcToDoTasks:{
@@ -29,12 +29,12 @@ export default class LocalTasker extends Component {
   }
   deleteTheTask=(taskId)=>{
     let newState = {...this.state};    
-    // console.log(`okay wait, deleting task haivng id: ${taskId}`);
+    // //console.log(`okay wait, deleting task haivng id: ${taskId}`);
     delete newState.mlcToDoTasks[taskId];
     this.setState(newState);
   }
   addNewTask(){
-    // console.log(this.state.inputFieldData);
+    // //console.log(this.state.inputFieldData);
     if(this.state.inputFieldData.length === 0 ){
       // show error message and return
       this.setState({
@@ -88,7 +88,7 @@ export default class LocalTasker extends Component {
   }
   constructor(params){
     super(params);
-    // console.log(params, this.generateUniqueId());
+    // //console.log(params, this.generateUniqueId());
     let initialState = localStorage.getItem ('alex21cLocalTasker');
     if(initialState){
       initialState = JSON.parse(initialState);
@@ -101,11 +101,11 @@ export default class LocalTasker extends Component {
           style : 'displayNone'        
         },
         mlcToDoTasks: {
-          
+
         }       
       };
     }    
-    // console.log(initialState)
+    // //console.log(initialState)
     this.state = {
       ...initialState
 
@@ -133,8 +133,8 @@ export default class LocalTasker extends Component {
       
 
 
-      <div className="border-2 border-slate-200 p-[2rem] w-[50rem] mt-[2rem] m-auto rounded-md flex flex-col gap-[2rem] text-[1.2rem] text-slate-200">
-        <header>
+      <div className="wrapperLocalTaskerApp border-2 border-slate-200 p-[2rem] w-[50rem] mt-[2rem] m-auto rounded-md flex flex-col gap-[2rem] text-[1.2rem] text-slate-200">
+        <header className="flex flex-col gap-[1rem]">
           <h1 className="smallCaps text-center font-semibold text-[3rem]  text-slate-50">LocalTasker (ToDo WebApp)</h1>
           <form className="flex flex-col gap-[1rem]  w-[100%]">
             <input 
@@ -150,7 +150,7 @@ export default class LocalTasker extends Component {
         </header>
 
         {Object.entries(this.state.mlcToDoTasks).length >0 &&  Object.entries(this.state.mlcToDoTasks).map(([key,task])=>{
-          console.log(task, key);
+          //console.log(task, key);
           return <OutputLines task={task} key={key} taskId={key} deleteTheTask={this.deleteTheTask} toggleTaskStatus={this.toggleTaskStatus}/>
 
         }

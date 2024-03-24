@@ -2,7 +2,7 @@ import { Component } from "react";
 export default class SuccessAndErrorMsg extends Component{
   constructor(props){
     super(props);
-    console.log(props);
+    //console.log(props);
 
 
 

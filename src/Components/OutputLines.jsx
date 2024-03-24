@@ -1,5 +1,5 @@
 export default function OutputLines({task, taskId, deleteTheTask, toggleTaskStatus}){
-  console.log(task.taskName)
+  //console.log(task.taskName)
   return (
     <div className="flex gap-[2rem] items-center">
       <div className="flex gap-[1rem] items-center">
